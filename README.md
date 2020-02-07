@@ -98,10 +98,10 @@ ZxgFF5o2vb+w/rp+mCWSLb49P/0LAAD///xIsyHAAgAA`)
 ```go
 import (
 
-	"io/ioutil"
+  "io/ioutil"
 
-	"github.com/wmentor/embed"
-	_ "github.com/login/proj/datapath" // load data
+  "github.com/wmentor/embed"
+  _ "github.com/login/proj/datapath" // load data
 
 )
 
@@ -109,14 +109,14 @@ func Get() ([]byte, error) {
 
   in, err := embed.Get("data/text.txt")
 
-	if err != nil {
-		return nil, err
-	}
+  if err != nil {
+    return nil, err
+  }
 
-	data, e1 := ioutil.ReadAll(in)
-	if e1 != nil {
-		return nil, e1
-	}
+  data, e1 := ioutil.ReadAll(in)
+  if e1 != nil {
+    return nil, e1
+  }
 
   return data, nil
 }
