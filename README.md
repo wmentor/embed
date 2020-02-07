@@ -101,7 +101,7 @@ import (
   "io/ioutil"
 
   "github.com/wmentor/embed"
-  _ "github.com/login/proj/datapath" // load data
+  _ "github.com/login/proj/data" // load data
 
 )
 
