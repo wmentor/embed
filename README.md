@@ -17,12 +17,21 @@ go get github.com/wmentor/embed
 You have directory data, that contains *text.txt* file (may be binary) of the following contents:
 
 ```
-English texts for beginners to practice reading and comprehension online and for free. Practicing your comprehension of written English will both improve your vocabulary and understanding of grammar and word order. The texts below are designed to help you develop while giving you an instant evaluation of your progress.
+English texts for beginners to practice reading and comprehension
+online and for free. Practicing your comprehension of written English 
+will both improve your vocabulary and understanding of grammar and 
+word order. The texts below are designed to help you develop while 
+giving you an instant evaluation of your progress.
 
-Prepared by experienced English teachers, the texts, articles and conversations are brief and appropriate to your level of proficiency. Take the multiple-choice quiz following each text, and you'll get the results immediately. You will feel both challenged and accomplished! You can even download (as PDF) and print the texts and exercises. It's enjoyable, fun and free. Good luck!
+Prepared by experienced English teachers, the texts, articles and 
+conversations are brief and appropriate to your level of proficiency. 
+Take the multiple-choice quiz following each text, and you'll get 
+the results immediately. You will feel both challenged and accomplished! 
+You can even download (as PDF) and print the texts and exercises. 
+It's enjoyable, fun and free. Good luck!
 ```
 
-Create generator.go into data:
+Create generator.go into data directory:
 
 ```go
 // +build ignore
@@ -86,6 +95,7 @@ ZxgFF5o2vb+w/rp+mCWSLb49P/0LAAD///xIsyHAAgAA`)
 
 ## Access embedded file from code
 
+```go
 import (
 
 	"io/ioutil"
@@ -110,6 +120,7 @@ func Get() ([]byte, error) {
 
   return data, nil
 }
+```
 
 ## Delete embedded file by name
 
