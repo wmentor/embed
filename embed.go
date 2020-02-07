@@ -100,7 +100,7 @@ func Make(src string, dest string, pkg string, name string) error {
 
 	builder := strings.Builder{}
 
-	fmt.Fprintf(rw, "package %s\n\nimport (\n\t\"github.com/wmentor/embed\"\n)\n\nfunc init() {\n\n\tpack.Register(%s, `\n", pkg, strconv.Quote(name))
+	fmt.Fprintf(rw, "package %s\n\nimport (\n\t\"github.com/wmentor/embed\"\n)\n\nfunc init() {\n\n\tembed.Register(%s, `\n", pkg, strconv.Quote(name))
 
 	i := 0
 
